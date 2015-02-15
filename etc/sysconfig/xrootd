@@ -1,0 +1,19 @@
+# Configuration file for Qserv services 
+# Automatically generated using meta-configuration file:
+# /home/fjammes/qserv-run/git/qserv-meta.conf
+
+# Configuration variables
+# used by Qserv and depencies
+##############################
+
+XROOTD_RUN_DIR=$XRDSSIEXAMPLE_DIR/xrootd-run
+XROOTD_LOG_DIR=$XRDSSIEXAMPLE_DIR/var/log
+XROOTD_PID_DIR=$XRDSSIEXAMPLE_DIR/var/run
+XROOTD_ETC_DIR=$XRDSSIEXAMPLE_DIR/etc
+
+NODE_TYPE=mono
+
+mkdir -p $XROOTD_RUN_DIR
+mkdir -p $XROOTD_LOG_DIR
+mkdir -p $XROOTD_PID_DIR
+mkdir -p $XROOTD_ETC_DIR
