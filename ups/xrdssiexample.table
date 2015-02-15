@@ -1,1 +1,7 @@
+envPrepend(PATH, ${PRODUCT_DIR}/bin)
+envPrepend(LD_LIBRARY_PATH, ${PRODUCT_DIR}/lib)
+
+# xrootd has been built with libevent 2.0
+# because of Qserv
+setupRequired(libevent)
 setupRequired(xrootd)
