@@ -17,4 +17,5 @@ NODE_TYPE=mono
 mkdir -p $XROOTD_RUN_DIR
 mkdir -p $XROOTD_LOG_DIR
 mkdir -p $XROOTD_PID_DIR
+mkdir -p $XROOTD_LOCK_DIR
 mkdir -p $XROOTD_ETC_DIR
