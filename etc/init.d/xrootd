@@ -57,7 +57,7 @@ start_service() {
 	prog=${1##*/}
 
 	pidfile=$(pid_file_name $prog)
-	lockfile=${QSERV_RUN_DIR}/var/lock/subsys/${prog}
+	lockfile=${XROOTD_LOCK_DIR}/subsys/${prog}
 	BINARY=${XROOTD_DIR}/bin/${prog}
 	LOGFILE=${LOG_DIR}/${prog}.log
 	[ -x ${BINARY} ] || exit 5
@@ -79,7 +79,7 @@ stop_service() {
         prog=${1##*/}
 
         pidfile=$(pid_file_name $prog)
-        lockfile=${QSERV_RUN_DIR}/var/lock/subsys/${prog}
+	lockfile=${XROOTD_LOCK_DIR}/subsys/${prog}
 
         eval stop -p $pidfile -l $lockfile $prog
 }

@@ -38,7 +38,7 @@ ssi.svclib libSsiSv.so
 # Set pathname for file location resolution.
 # i.e., pathname/somefile will be exported in the xroot URL:
 # xroot://manager:0000/somefile
-oss.localroot /home/fjammes/qserv-run/git/xrootd-run
+oss.localroot /home/fjammes/src/xrdssi-example/xrootd-run
 
 # Do not change.  This directive tries to lower the minimum free disk space
 # for "file" writes (which are subquery writes in our case).
@@ -55,9 +55,9 @@ xrootd.async off
 
 # Writable paths for administration
 # cmsd and xrootd paths for pid
-all.pidpath /home/fjammes/qserv-run/git/var/run
+all.pidpath /home/fjammes/src/xrdssi-example/var/run
 # path to write logging and other information
-all.adminpath /home/fjammes/qserv-run/git/tmp
+all.adminpath /home/fjammes/src/xrdssi-example/tmp
 
 # host:port of manager instance (2131 is default)
 #MONO-NODE# all.manager 127.0.0.1:2131
