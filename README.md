@@ -23,6 +23,7 @@ edit etc/lsp.cf values which contains xrdssi-example
 ./etc/init.d/xrootd start
 # or
 ./run-xrootd-simple.sh
-ssicl 127.0.0.1:1094
+# rlwrap system package is a cmd-line helper
+rlwrap ssicl 127.0.0.1:1094
 # and then play wth .bat files
 ```

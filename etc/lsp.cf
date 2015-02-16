@@ -74,4 +74,4 @@ xrd.port 1094
 xrd.network nodnr
 
 # Uncomment the following line for detailed xrootd debugging
-# xrootd.trace all
+xrootd.trace all
